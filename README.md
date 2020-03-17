@@ -34,7 +34,7 @@ If you find our code or method helpful, please use the following BibTex entry.
 ## Installation
 1. Clone the repository with submodule.
    ```
-   git clone --recursive https://github.com/jitengmu/Learning-from-Synthetic_Animals.git
+   git clone https://github.com/JitengMu/Learning-from-Synthetic_Animals.git
    ```
 
 2. Go to directory `Learning-from-Synthetic-Animals/` and create a symbolic link to the images directory of the animal dataset:
