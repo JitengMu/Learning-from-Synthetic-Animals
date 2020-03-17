@@ -92,13 +92,13 @@ CUDA_VISIBLE_DEVICES=0 python ./evaluation/test.py --dataset1 synthetic_animal_s
 1. Training on synthetic animal dataset.
 
 ```
-UDA_VISIBLE_DEVICES=0 python train/train.py --dataset synthetic_animal_sp -a hg --stacks 4 --blocks 1 --image-path ./animal_data/ --checkpoint ./checkpoint/horse/syn --animal horse
+CUDA_VISIBLE_DEVICES=0 python train/train.py --dataset synthetic_animal_sp -a hg --stacks 4 --blocks 1 --image-path ./animal_data/ --checkpoint ./checkpoint/horse/syn --animal horse
 ```
 
 2. Generate pseudo-labels for TigDog dataset and jointly train on synthetic animal and TigDog datasets.
 
 ```
-CUDA_VISIBLE_DEVICES=0 python CC-SSL.py --num-epochs 60 --checkpoint ./checkpoint/horse/ssl/ --resume ./checkpoint/horse/syn --animal horse
+CUDA_VISIBLE_DEVICES=0 python CC-SSL.py --num-epochs 60 --checkpoint ./checkpoint/horse/ssl/ --resume ./checkpoint/horse/syn/model_best.pth.tar --animal horse
 ```
 
 3. Evaluate the accuracy on TigDog Dataset using metric PCK@0.05.
