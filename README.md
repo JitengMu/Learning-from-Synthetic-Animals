@@ -39,7 +39,7 @@ If you find our code or method helpful, please use the following BibTex entry.
 
 2. Go to directory `Learning-from-Synthetic-Animals/` and create a symbolic link to the images directory of the animal dataset:
    ```
-   ln -s PATH_TO_IMAGES_DIR ./animal_data/
+   ln -s PATH_TO_IMAGES_DIR ./animal_data
    ```
 
 3. Download and pre-processing datasets:
