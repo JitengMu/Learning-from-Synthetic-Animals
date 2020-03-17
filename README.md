@@ -98,7 +98,7 @@ CUDA_VISIBLE_DEVICES=0 python train/train.py --dataset synthetic_animal_sp -a hg
 2. Generate pseudo-labels for TigDog dataset and jointly train on synthetic animal and TigDog datasets.
 
 ```
-CUDA_VISIBLE_DEVICES=0 python CC-SSL.py --num-epochs 60 --checkpoint ./checkpoint/horse/ssl/ --resume ./checkpoint/horse/syn/model_best.pth.tar --animal horse
+CUDA_VISIBLE_DEVICES=0 python CCSSL/CCSSL.py --num-epochs 60 --checkpoint ./checkpoint/horse/ssl/ --resume ./checkpoint/horse/syn/model_best.pth.tar --animal horse
 ```
 
 3. Evaluate the accuracy on TigDog Dataset using metric PCK@0.05.

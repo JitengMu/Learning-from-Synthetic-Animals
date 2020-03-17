@@ -2,7 +2,7 @@ import argparse
 import os.path as osp
 class TrainOptions():
     def initialize(self):
-        parser = argparse.ArgumentParser(description="adaptive segmentation netowork")
+        parser = argparse.ArgumentParser(description="consistency constrained semi-supervised learning")
         parser.add_argument("--animal", type=str, default='horse',help="horse or tiger")
         parser.add_argument("--model", type=str, default='hg',help="available options : hg")
         parser.add_argument("--source", type=str, default='synthetic_animal_sp',help="source dataset : loading synthetic data gt labels")
@@ -18,7 +18,7 @@ class TrainOptions():
         parser.add_argument("--num-epochs", type=int, default=60, help="Number of training epochs.")
         parser.add_argument("--init-weights", type=str, default=None, help="initial model.")
         parser.add_argument("--print-freq", type=int, default=100, help="print loss and time fequency.")
-        parser.add_argument("--checkpoint", type=str, default='/path/to/snapshots/', help="Where to save snapshots of the model.")
+        parser.add_argument("--checkpoint", type=str, default='./checkpoint/horse/ssl/', help="Where to save snapshots of the model.")
         parser.add_argument("--gamma_", type=float, default=10.0, help="target dataset loss coefficient")
 
         # stacked hourglass
@@ -29,7 +29,7 @@ class TrainOptions():
         parser.add_argument('--rot-factor', type=float, default=30, help='Rotation factor (data aug).')
         parser.add_argument('--sigma', type=float, default=1, help='Groundtruth Gaussian sigma.')
         parser.add_argument('--label-type', metavar='LABELTYPE', default='Gaussian', choices=['Gaussian', 'Cauchy'], help='Labelmap dist type: (default=Gaussian)')
-        parser.add_argument('--image-path', default='/home/jiteng/data/animal_data/', type=str, help='path to images')
+        parser.add_argument('--image-path', default='./animal_data/', type=str, help='path to images')
         parser.add_argument('--arch', '-a', metavar='ARCH', default='hg', help='model architecture: (default: hg)')
         parser.add_argument('-s', '--stacks', default=4, type=int, metavar='N', help='Number of hourglasses to stack')
         parser.add_argument('-b', '--blocks', default=1, type=int, metavar='N', help='Number of residual modules at each location in the hourglass')

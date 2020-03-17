@@ -15,7 +15,7 @@ Training:
 ```
 CUDA_VISIBLE_DEVICES=0 python train/train.py --dataset real_animal -a hg --stacks 4 --blocks 1 --image-path ./animal_data/ --checkpoint ./checkpoint/real_animal/horse/horse_hourglass/ --animal horse
 ```
-
+Evaluation:
 ```
 CUDA_VISIBLE_DEVICES=0 python train/train.py --dataset real_animal -a hg --stacks 4 --blocks 1 --image-path ./animal_data/ --checkpoint ./checkpoint/real_animal/horse/horse_hourglass/ --animal horse --resume checkpoint/real_animal/horse/horse_hourglass/model_best.pth.tar --evaluate
 ```
