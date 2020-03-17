@@ -44,7 +44,7 @@ If you find our code or method helpful, please use the following BibTex entry.
 
 3. Download and pre-processing datasets:
     * Download [TigDog Dataset](http://calvin.inf.ed.ac.uk/datasets/tigdog/) and move folder `behaviorDiscovery2.0` to `./animal_data`.
-    * Run `python Get_cropped_TigDog.py` to get cropped `TigDog` Dataset.
+    * Run `python get_cropped_TigDog.py` to get cropped `TigDog` Dataset.
     * Download [Synthetic Animal Dataset](https://www.cs.jhu.edu/~qiuwch/animal/) with script `bash get_dataset.sh`.
 
 ## High level organization
