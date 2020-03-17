@@ -13,14 +13,18 @@
 
 Training:
 ```
-UDA_VISIBLE_DEVICES=0 python train/train.py --dataset real_animal -a hg --stacks 4 --blocks 1 --image-path ./animal_data/ --checkpoint ./checkpoint --animal horse
+CUDA_VISIBLE_DEVICES=0 python train/train.py --dataset real_animal -a hg --stacks 4 --blocks 1 --image-path ./animal_data/ --checkpoint ./checkpoint/real_animal/horse/horse_hourglass/ --animal horse
+```
+
+```
+CUDA_VISIBLE_DEVICES=0 python train/train.py --dataset real_animal -a hg --stacks 4 --blocks 1 --image-path ./animal_data/ --checkpoint ./checkpoint/real_animal/horse/horse_hourglass/ --animal horse --resume checkpoint/real_animal/horse/horse_hourglass/model_best.pth.tar --evaluate
 ```
 
 #### Example 2: Run the following commands to train on synthetic animals and evaluate on real animals(TigDog). 
 
 Training:
 ```
-UDA_VISIBLE_DEVICES=0 python train/train.py --dataset synthetic_animal_sp -a hg --stacks 4 --blocks 1 --image-path ./animal_data/ --checkpoint ./checkpoint/synthetic_animal/horse/horse_spaug --animal horse
+CUDA_VISIBLE_DEVICES=0 python train/train.py --dataset synthetic_animal_sp -a hg --stacks 4 --blocks 1 --image-path ./animal_data/ --checkpoint ./checkpoint/synthetic_animal/horse/horse_spaug --animal horse
 ```
 Evaluation:
 ```
