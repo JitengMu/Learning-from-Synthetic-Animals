@@ -176,7 +176,7 @@ def main(args):
     udb.client.request('vset /camera/0/rotation -20 180 0')
 
 
-    val2017_dir = args.random_texture_path
+    val2017_dir = os.path.abspath(args.random_texture_path)
     bg_path_list = glob_images(val2017_dir)
     texture_path_list = glob_images(val2017_dir)
 
