@@ -9,21 +9,12 @@ Code for [Learning from Synthetic Aniamls (CVPR 2020, oral)](https://arxiv.org/a
 
 If you find our code or method helpful, please use the following BibTex entry.
 ```
-@article{DBLP:journals/corr/abs-1912-08265,
-  author    = {Jiteng Mu and
-               Weichao Qiu and
-               Gregory D. Hager and
-               Alan L. Yuille},
-  title     = {Learning from Synthetic Animals},
-  journal   = {CoRR},
-  volume    = {abs/1912.08265},
-  year      = {2019},
-  url       = {http://arxiv.org/abs/1912.08265},
-  archivePrefix = {arXiv},
-  eprint    = {1912.08265},
-  timestamp = {Fri, 03 Jan 2020 16:10:45 +0100},
-  biburl    = {https://dblp.org/rec/journals/corr/abs-1912-08265.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+@InProceedings{Mu_2020_CVPR,
+author = {Mu, Jiteng and Qiu, Weichao and Hager, Gregory D. and Yuille, Alan L.},
+title = {Learning From Synthetic Animals},
+booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2020}
 }
 ```
 
