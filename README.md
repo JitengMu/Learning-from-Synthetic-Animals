@@ -36,7 +36,7 @@ year = {2020}
 3. Download and pre-processing datasets:
     * Download [TigDog Dataset](http://calvin-vision.net/datasets/tigdog/) and move folder `behaviorDiscovery2.0` to `./animal_data`.
     * Run `python get_cropped_TigDog.py` to get cropped `TigDog` Dataset.
-    * Download [Synthetic Animal Dataset](https://www.cs.jhu.edu/~qiuwch/animal/) with script `bash get_dataset.sh`.
+    * Download [Synthetic Animal Dataset](https://huggingface.co/datasets/JitengMu/CVPR2020_Learning_from_Synthetic_Animals_release/tree/main).
 
 ## High level organization
 
@@ -54,7 +54,7 @@ year = {2020}
 
 ## Demo
 
-1. Download the [checkpoint](https://www.cs.jhu.edu/~qiuwch/animal/) with script `bash get_checkpoint.sh` and the structure looks like:
+1. Download the [checkpoint](https://huggingface.co/datasets/JitengMu/CVPR2020_Learning_from_Synthetic_Animals_release/tree/main) and the structure looks like:
 
 ```
 checkpoint    
@@ -102,7 +102,7 @@ CUDA_VISIBLE_DEVICES=0 python ./evaluation/test.py --dataset1 synthetic_animal_s
 
 ## Generate synthetic animal dataset using Unreal Engine
 
-1. Download and install the `unrealcv_binary` for [Linux](https://cs.jhu.edu/~qiuwch/animal) (tested in Ubuntu 16.04) with `bash get_unrealcv_binary.sh`
+1. Download and install the `unrealcv_binary` for [Linux](https://huggingface.co/datasets/JitengMu/CVPR2020_Learning_from_Synthetic_Animals_release/tree/main) (tested in Ubuntu 16.04) with `bash get_unrealcv_binary.sh`
 
 2. Run unreal engine. 
 
